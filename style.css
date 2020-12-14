@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.main{
+    width:100%;
+    height:100vh;
+    background: linear-gradient(to right, #eee4e4, #142d33);
+    position :relative;
+    overflow:hidden;
+}
+#logo{
+    height:80px;
+    width:80px;
+}
+.logo{
+    flex-basis:20%
+}
+nav{
+    width: 90%;
+    margin: auto;
+    position: sticky;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.nav-link{
+    flex:1;
+    text-align:right;
+}
+.nav-link li{
+    list-style: none;
+    display:inline-block;
+    margin-right:5%;   
+}
+.nav-link li a{
+    color:white;
+    text-decoration: none;
+}
+.information{
+    height:800px;
+    width:800px;
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translateY(-50%);
+}
+#circle{
+    height:800px;
+    width:800px;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius:50%;
+    transform:rotate(0deg);
+    transition: 1s;
+    transition-timing-function:ease-out;
+}
+.features img{
+    height:70px;
+    width:70px;
+}
+.features{
+    position:absolute;
+    display:flex;
+    color:white;
+}
+.features div{
+    margin-left:30px;
+}
+.features div p{
+    margin-top:8px;
+}
+.one {
+    top: 365px;
+    right: 28px;
+}
+.two{
+    top: 90px;
+    left: 280px;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom: 366px;
+    left: 29px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom: 77px;
+    left: 273px;
+    transform: rotate(-270deg);
+}
+.iphoneimg img{
+    width: 340px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: 0.5s all ease-in-out; 
+}
+.controls{
+    position: absolute;
+    top:50%;
+    right:10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.controls h3{
+    margin:15px 0;
+    color:white;
+
+}
+#upbtn{
+    width:15px;
+    cursor: pointer;    
+}
+#downbtn{
+    width:15px;
+    cursor: pointer; 
+    transform: rotate(180deg);   
+}
+.overlay{
+    width:0;
+    cursor:0;
+    border-top:400px solid white;
+    border-right:400px solid transparent;
+    border-bottom:400px solid white;
+    border-left:400px solid white;
+    position:absolute;
+    left:0;
+    top:0;
+
+}
